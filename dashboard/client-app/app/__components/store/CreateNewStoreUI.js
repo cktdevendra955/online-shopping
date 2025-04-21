@@ -1,13 +1,11 @@
 import React from "react";
-import UploadSingleImage from "../upload/SingleImageUpload";
-import Link from "next/link";
 
-const CreateNewProductUI = () => {
+const CreateNewStoreUI = () => {
   return (
     <>
-      <div className="w-full py-10 px-5 md:px-10 shadow-sm border rounded-3xl  mb-2 bg-white">
+      <div className="w-full md:w-1/2 py-10 px-5 md:px-10 shadow-xl border rounded-3xl  mb-2 bg-white">
         <div className="text-center mb-10">
-          <h1 className="font-bold text-3xl text-gray-900">Product</h1>
+          <h1 className="font-bold text-3xl text-gray-900">Store</h1>
           <p>Enter your information to register</p>
         </div>
         <div>
@@ -109,4 +107,4 @@ const CreateNewProductUI = () => {
   );
 };
 
-export default CreateNewProductUI;
+export default CreateNewStoreUI;

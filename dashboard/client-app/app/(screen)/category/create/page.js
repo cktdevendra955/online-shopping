@@ -1,14 +1,13 @@
-import { HeaderUi } from "@/app/__components/layout/HeaderUi";
-import CreateNewProductUI from "@/app/__components/product/CreateNewProductUI";
+import CreateNewCategoryUI from "@/app/__components/category/create/CreateNewCategoryUI";
 import React from "react";
 
-const Create = () => {
+const CreateCategory = () => {
   return (
     <>
       <div className=" flex items-center justify-center">
         <div className=" text-gray-500 w-full overflow-hidden">
           <div className="md:flex w-full">
-            <CreateNewProductUI />
+            <CreateNewCategoryUI />
           </div>
         </div>
       </div>
@@ -16,4 +15,4 @@ const Create = () => {
   );
 };
 
-export default Create;
+export default CreateCategory;

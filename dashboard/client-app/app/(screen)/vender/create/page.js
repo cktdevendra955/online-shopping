@@ -1,11 +1,10 @@
-import CreateNewStoreUI from "@/app/__components/store/CreateNewStoreUI";
+import CreateNewVender from "@/app/__components/vender/CreateNewVender";
 import React from "react";
 
-const CreateStore = () => {
+const CreateVender = () => {
   return (
     <>
-     
-     <div className=" flex items-center justify-center">
+      <div className=" flex items-center justify-center">
         <div className=" text-gray-500 w-full overflow-hidden">
           <div className="md:flex w-full">
             <div className="hidden md:block w-1/2  py-10 px-10">
@@ -213,9 +212,8 @@ const CreateStore = () => {
                 />
               </svg>
             </div>
-            
-              <CreateNewStoreUI />
-            
+
+            <CreateNewVender />
           </div>
         </div>
       </div>
@@ -223,4 +221,4 @@ const CreateStore = () => {
   );
 };
 
-export default CreateStore;
+export default CreateVender;

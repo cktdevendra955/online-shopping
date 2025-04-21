@@ -1,142 +1,96 @@
-import React from 'react'
+import OrderRowUI from "@/app/__components/orders/OrderRowUI";
+import Link from "next/link";
+import React from "react";
 
 const Orders = () => {
   return (
-     
     <>
-    <div className="mx-auto">
-      <div className="p-4  bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-       
-
-        <div className="flow-root">
-      
-<section class="">
-    <div class="">
-      
-        <div class="">
-            <header class="px-5 py-4 border-b border-gray-100">
-                <h2 class="font-semibold text-gray-800">Customers</h2>
-            </header>
-            <div class="p-3">
-                <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
-                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
-                            <tr>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Name</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Email</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Spent</div>
-                                </th>
-                                <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-center">Country</div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm divide-y divide-gray-100">
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-05.jpg" width="40" height="40" alt="Alex Shatov" /></div>
-                                        <div class="font-medium text-gray-800">Alex Shatov</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">alexshatov@gmail.com</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">🇺🇸</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-06.jpg" width="40" height="40" alt="Philip Harbach" /></div>
-                                        <div class="font-medium text-gray-800">Philip Harbach</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">philip.h@gmail.com</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,767.04</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">🇩🇪</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-07.jpg" width="40" height="40" alt="Mirko Fisuk" /></div>
-                                        <div class="font-medium text-gray-800">Mirko Fisuk</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">mirkofisuk@gmail.com</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,996.00</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">🇫🇷</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-08.jpg" width="40" height="40" alt="Olga Semklo" /></div>
-                                        <div class="font-medium text-gray-800">Olga Semklo</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">olga.s@cool.design</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$1,220.66</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">🇮🇹</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                                          <img class="rounded-full" src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-09.jpg" width="40" height="40" alt="Burak Long" /></div>
-                                        <div class="font-medium text-gray-800">Burak Long</div>
-                                    </div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">longburak@gmail.com</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$1,890.66</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-lg text-center">🇬🇧</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+      <div className="mx-auto max-w-7xl">
+        <div className="p-6 bg-gradient-to-br from-white via-slate-50 to-gray-100 rounded-2xl border border-gray-200 shadow-xl dark:bg-gray-900 dark:border-gray-700 transition-all duration-300">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            {/* Header Text */}
+            <div>
+              <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                📦Orders
+              </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                View and manage your orders efficiently. Track status, details,
+                and process shipments.
+              </p>
             </div>
-        </div>
-    </div>
-</section>
 
-          
+            {/* Search */}
+            <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4 w-full md:w-auto">
+              <div className="relative flex items-center w-full md:w-72">
+                <input
+                  type="text"
+                  placeholder="Search orders..."
+                  className="w-full py-2.5 px-4 pl-10 text-sm rounded-lg bg-white border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none shadow-sm dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+                />
+                <svg
+                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817
+              4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </>
-  )
-}
 
-export default Orders
+      <div className="mx-auto mt-2">
+        <div className="p-4  bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="flow-root">
+            <section className="">
+              <div className="">
+                <div className="">
+                  {/* <header className="px-5 py-4 border-b border-gray-100">
+                            <h2 className="font-semibold text-gray-800">Customers</h2>
+                        </header> */}
+                  <div className="p-3">
+                    <div className="overflow-x-auto">
+                      <table className="table-auto w-full">
+                        {/* <thead className="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                        <tr>
+                                            <th className="p-2 whitespace-nowrap">
+                                                <div className="font-semibold text-left">Name</div>
+                                            </th>
+                                            <th className="p-2 whitespace-nowrap">
+                                                <div className="font-semibold text-left">Email</div>
+                                            </th>
+                                            <th className="p-2 whitespace-nowrap">
+                                                <div className="font-semibold text-left">Spent</div>
+                                            </th>
+                                            <th className="p-2 whitespace-nowrap">
+                                                <div className="font-semibold text-center">Country</div>
+                                            </th>
+                                        </tr>
+                                    </thead> */}
+                        <tbody className="text-sm divide-y divide-gray-100">
+                          <OrderRowUI />
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Orders;
