@@ -5,7 +5,6 @@ import React from 'react'
 const Create = () => {
   return (
     <div>
-        <HeaderUi title="Create new Product"></HeaderUi>
         <CreateNewProductUI />
     </div>
   )
