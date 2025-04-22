@@ -1,6 +1,7 @@
+import Link from "next/link";
 import React from "react";
 
-const OrderRowUI = () => {
+const ReturnProductsRowUI = () => {
   return (
     <>
       <tr className="">
@@ -15,7 +16,7 @@ const OrderRowUI = () => {
                 alt=""
               />
             </div>
-            <div className="font-medium text-gray-800">Alex Shatov</div>
+            <div className="font-medium text-gray-800"><Link href={"#"}>Alex Shatov</Link></div>
           </div>
         </td>
         <td className="p-2 whitespace-nowrap">
@@ -32,4 +33,4 @@ const OrderRowUI = () => {
   );
 };
 
-export default OrderRowUI;
+export default ReturnProductsRowUI;

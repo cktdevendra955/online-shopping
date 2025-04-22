@@ -49,43 +49,15 @@ const Orders = () => {
       </div>
 
       <div className="mx-auto mt-2">
-        <div className="p-4  bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-          <div className="flow-root">
-            <section className="">
-              <div className="">
-                <div className="">
-                  {/* <header className="px-5 py-4 border-b border-gray-100">
-                            <h2 className="font-semibold text-gray-800">Customers</h2>
-                        </header> */}
-                  <div className="p-3">
-                    <div className="overflow-x-auto">
-                      <table className="table-auto w-full">
-                        {/* <thead className="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
-                                        <tr>
-                                            <th className="p-2 whitespace-nowrap">
-                                                <div className="font-semibold text-left">Name</div>
-                                            </th>
-                                            <th className="p-2 whitespace-nowrap">
-                                                <div className="font-semibold text-left">Email</div>
-                                            </th>
-                                            <th className="p-2 whitespace-nowrap">
-                                                <div className="font-semibold text-left">Spent</div>
-                                            </th>
-                                            <th className="p-2 whitespace-nowrap">
-                                                <div className="font-semibold text-center">Country</div>
-                                            </th>
-                                        </tr>
-                                    </thead> */}
-                        <tbody className="text-sm divide-y divide-gray-100">
-                          <OrderRowUI />
-                          
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+        <div className="bg-white rounded-lg border shadow-md p-4 dark:bg-gray-800 dark:border-gray-700">
+          <div className="overflow-x-auto">
+            <table className="table-auto w-full">
+              <tbody className="text-sm divide-y divide-gray-100">
+                <OrderRowUI />
+                <OrderRowUI />
+                <OrderRowUI />
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

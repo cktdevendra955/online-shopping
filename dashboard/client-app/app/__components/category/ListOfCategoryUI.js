@@ -4,7 +4,7 @@ import React from 'react'
 const ListOfCategoryUI = () => {
   return (
     <>
-    <a href="#" className="">
+    <div  className="">
             {/* <p className="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl">
               {" "}
               FEATURED{" "}
@@ -33,7 +33,7 @@ const ListOfCategoryUI = () => {
                 <p className="text-gray-400 text-sm"> Beginner speakers </p>
               </div>
             </div>
-          </a>
+          </div>
     </>
   )
 }

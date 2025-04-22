@@ -1,5 +1,4 @@
-import ReturnProductUI from "@/app/__components/return/ReturnProductUI";
-import Link from "next/link";
+import ReturnProductsRowUI from "@/app/__components/retuenProducts/ReturnProductsRowUI";
 import React from "react";
 
 const Returns = () => {
@@ -48,12 +47,14 @@ const Returns = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-4">
-        <div className="relative flex  w-full flex-col rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
-          <div className="!z-5 relative flex h-full w-full flex-col rounded-[20px] bg-white bg-clip-border p-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-800 dark:text-white dark:shadow-none">
-            
-              <ReturnProductUI />
-            
+      <div className="mx-auto mt-2">
+        <div className="bg-white rounded-lg border shadow-md p-4 dark:bg-gray-800 dark:border-gray-700">
+          <div className="overflow-x-auto">
+            <table className="table-auto w-full">
+              <tbody className="text-sm divide-y divide-gray-100">
+                <ReturnProductsRowUI />
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
