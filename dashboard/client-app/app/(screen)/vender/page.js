@@ -1,5 +1,6 @@
 import PageHeaderUI from "@/app/__components/pageHeader/PageHeaderUI";
 import VenderTableRowUI from "@/app/__components/vender/VenderTableRowUI";
+import routes from "@/app/config/routes/routes";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,7 @@ const Vender = () => {
   const pageHeader = {
     title:"Vendors",
     subtitle:"Manage your vendor relationships and list of supplier",
-    link:"vender/create",
+    link: routes.VENDER_CREATE,
     search:"vender"
   }
   return (
