@@ -1,7 +1,6 @@
 package com.core.backend.dto.venders;
 
-import com.core.backend.dto.user.UserDto;
-import com.core.backend.entity.user.UserEntity;
+
 import com.core.backend.entity.venders.VenderEntity;
 import org.springframework.beans.BeanUtils;
 

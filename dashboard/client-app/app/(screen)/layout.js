@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import sidebarRoutes from "../config/routes/sidebarRoutes";
 
 function Layout({ children }) {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -48,9 +49,17 @@ function Layout({ children }) {
                   </Link>
                 </li>
 
+                {/* <SidebarNavLinkUI  hrefLink={sidebarRoutes.ORDERS} title={"Orders"} />
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.RETURNS} title={"Returns"}/>
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.CATEGORIES} title={"Categories"}/>
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.PRODUCTS} title={"Products"}/>
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.USERS} title={"Users"}/>
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.VENDER} title={"Venders"}/>
+                <SidebarNavLinkUI  hrefLink={sidebarRoutes.STORE} title={"Store"}/> */}
+
                 <li>
                   <Link
-                    href={"/orders"}
+                    href={sidebarRoutes.ORDERS}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -80,7 +89,7 @@ function Layout({ children }) {
 
                 <li>
                   <Link
-                    href={"/returns"}
+                    href={sidebarRoutes.RETURNS}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -110,7 +119,7 @@ function Layout({ children }) {
 
                 <li>
                   <Link
-                    href={"/category"}
+                    href={sidebarRoutes.CATEGORIES}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -138,7 +147,7 @@ function Layout({ children }) {
 
                 <li>
                   <Link
-                    href={"/product"}
+                    href={sidebarRoutes.PRODUCTS}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -167,7 +176,7 @@ function Layout({ children }) {
                
                 <li>
                   <Link
-                    href={"/users"}
+                    href={sidebarRoutes.USERS}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -195,7 +204,7 @@ function Layout({ children }) {
 
                 <li>
                   <Link
-                    href={"/vender"}
+                    href={sidebarRoutes.VENDER}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -224,7 +233,7 @@ function Layout({ children }) {
 
                 <li>
                   <Link
-                    href={"/store"}
+                    href={sidebarRoutes.STORE}
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
                     <span className="inline-flex justify-center items-center ml-4">

@@ -1,7 +1,5 @@
 package com.core.backend.dto.user;
 
-import com.core.backend.dto.role.RoleDto;
-import com.core.backend.entity.role.RoleEntity;
 import com.core.backend.entity.user.UserEntity;
 import org.springframework.beans.BeanUtils;
 

@@ -1,21 +1,22 @@
-package com.core.backend.dto.store;
+package com.core.backend.dto.category;
 
 import com.core.backend.dto.BaseDto;
 
-public class StoreDto extends BaseDto {
-    String title;
-    String description;
-    String slug;
-    String profile_picture;
+public class CategoryDto extends BaseDto {
 
-    public StoreDto() {
+    private String title;
+    private String description;
+    private String slug;
+    private boolean isActive;
+
+    public CategoryDto() {
     }
 
-    public StoreDto(String title, String description, String slug, String profile_picture) {
+    public CategoryDto(String title, String description, String slug, boolean isActive) {
         this.title = title;
         this.description = description;
         this.slug = slug;
-        this.profile_picture = profile_picture;
+        this.isActive = isActive;
     }
 
     public String getTitle() {
@@ -42,11 +43,11 @@ public class StoreDto extends BaseDto {
         this.slug = slug;
     }
 
-    public String getProfile_picture() {
-        return profile_picture;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setProfile_picture(String profile_picture) {
-        this.profile_picture = profile_picture;
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }

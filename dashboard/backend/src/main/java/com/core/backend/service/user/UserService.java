@@ -6,8 +6,6 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface UserService {
-
-    List<UserDto> getALl();
-    ResponseEntity<?> create(UserDto userDto);
-    UserDto getById(Long id);
+    List<UserDto> getAll();
+    ResponseEntity<?> getById(Long id);
 }

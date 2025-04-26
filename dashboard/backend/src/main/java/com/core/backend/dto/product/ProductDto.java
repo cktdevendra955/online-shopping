@@ -1,12 +1,9 @@
-package com.core.backend.entity.product;
+package com.core.backend.dto.product;
 
-import com.core.backend.entity.BaseEntity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.core.backend.dto.BaseDto;
 
-@Entity
-@Table(name = "product_demo")
-public class ProductEntity extends BaseEntity {
+public class ProductDto extends BaseDto {
+
 
     private String title;
     private String description;
@@ -15,10 +12,10 @@ public class ProductEntity extends BaseEntity {
     private String old_price;
     private String new_price;
 
-    public ProductEntity() {
+    public ProductDto() {
     }
 
-    public ProductEntity(String title, String description, String slug, String thumbnail, String old_price, String new_price) {
+    public ProductDto(String title, String description, String slug, String thumbnail, String old_price, String new_price) {
         this.title = title;
         this.description = description;
         this.slug = slug;

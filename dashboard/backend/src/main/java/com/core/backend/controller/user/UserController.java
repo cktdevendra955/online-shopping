@@ -4,30 +4,30 @@ import com.core.backend.dto.user.UserDto;
 import com.core.backend.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("ap/v1/user/")
+@RequestMapping("user/")
 public class UserController {
+
 
     @Autowired
     private UserService userService;
 
-    @GetMapping
-    public ResponseEntity<List<UserDto>> getAll(){
-        return ResponseEntity.ok(this.userService.getALl());
-    }
 
-    @PostMapping
-    public ResponseEntity<?> create(@RequestBody UserDto userDto){
-        return this.userService.create(userDto);
+    @GetMapping
+    public List<UserDto> getAll(){
+        return this.userService.getAll();
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<UserDto> getById(@PathVariable Long id){
-        return ResponseEntity.ok(this.userService.getById(id));
+    public ResponseEntity<?> getById(@PathVariable Long id){
+        return  this.userService.getById(id);
     }
 
 }
